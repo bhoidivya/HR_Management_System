@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: bisque; */
+    min-height: 120%;
+    background-image: url('image2.jpg');
+    /* background-position: center center;   */
+    background-size: cover;
+    color : white;
+    align-items: center;
+}
+
+ .hr{
+    color : white;
+ }
+
+ .center{
+    color: white;
+    text-align: bottom;
+    justify-content: bottom;
+    align-items: bottom;
+    float: italic;
+    vertical-align: text-bottom;
+    text-decoration: bottom;
+    padding: 0%;
+ }
+ 
+ .icon{
+   background-color: white;
+ }

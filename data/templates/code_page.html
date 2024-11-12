@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in</title>
+    <link rel="stylesheet" href="{% static 'login_page.css' %}">
+</head>
+
+<body>
+
+<h2> Code Verification</h2>
+
+<form method="POST" >
+  {% csrf_token %}
+  <div class="container">
+      <br>
+    <label for="code"><b>Email ID</b></label>
+    <input type="number" placeholder="Enter CODE" name="code" maxlength="5" required>
+<br>
+      <br>
+    <button type="submit">Submit</button>
+  </div>
+</form>
+<div style="width:100px; margin-left:435px">
+    <a href="/resend_otp/{{id}}/">Resend Otp</a></div>
+<h2 style="color:red;">{{ error }}</h2>
+<h2 style="color:red;">{{ greater15 }}</h2>
+<h2 style="color:green;">{{ secondOTP }}</h2>
+
+</body>
+</html>

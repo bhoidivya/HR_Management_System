@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
+
+<body>
+
+<h2>Registration Form</h2>
+
+<form method="POST" >
+  {% csrf_token %}
+  <div class="container">
+    <label for="first_name"><b>First Name</b></label>
+    <input type="text" placeholder="first_name" name="first_name" required>
+<br>
+<br>
+    <label for="last_name"><b>Last Name</b></label>
+    <input type="text" placeholder="last_name" name="last_name" required>
+<br>
+<br>
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+<br>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br><br>
+    <label for="salary"><b>Salary</b></label>
+    <input type="salary" placeholder="Enter salary" name="salary" required>
+    <br><br>
+    <label for="dep"><b>Department</b></label><select name="dep">
+    {% for dep in dep_list %}
+    <option value="{{dep.id}}">{{dep.dep_name}}</option>
+    {% endfor %}</select><br> 
+    <br>
+    <label for="is_active"><b>Is_active</b></label>
+    <input type="checkbox" name="is_active" id="is_active" value="True" {% if emp.is_active %} checked {% endif %} >
+    <br><br>
+    <label for="Phone"><b>Phone No.</b></label>
+    <input type="Phone" placeholder="Enter Phone" name="Phone" required>
+
+    <button type="submit">Register</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+  <h1 style="color:green"><em> {{ registered }}</em></h1>
+
+</form>
+{{ error_msg }}
+
+</body>
+</html>

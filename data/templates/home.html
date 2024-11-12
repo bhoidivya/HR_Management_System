@@ -1,0 +1,533 @@
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>HR Management System</title>
+  <link rel="stylesheet" href="{% static 'data/css/style.css' %}">
+</head>
+<body>
+
+  <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+
+
+    <header class="templateux-navbar" role="banner">
+
+      <div class="container"  data-aos="fade-down">
+        <div class="row">
+
+          <div class="col-3 templateux-logo">
+            <a href="" class="animsition-link">HumanResources</a>
+          </div>
+          <nav class="col-9 site-nav">
+            <button class="d-block d-md-none hamburger hamburger--spin templateux-toggle templateux-toggle-light ml-auto templateux-toggle-menu" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button> <!-- .templateux-toggle -->
+
+            <ul class="sf-menu templateux-menu d-none d-md-block">
+              <li class="active">
+                <a href="/home/" class="animsition-link">Home</a>
+              </li>
+              <li><a href="/about_us/" class="animsition-link">About</a></li>
+              <li>
+                <a href="" class="animsition-link">Employee</a>
+                <ul>
+                  <li><a href="/employee/">Employee List</a>
+                  <ul>
+                    <li><a href="/attendance_list/">Attendance</a>
+                    <li><a href="/leave_request_list/">Leave Request</a>
+                    </li>
+                </li>
+              </li>
+                  </ul>
+                </li>
+                  <li><a href="/email_message/">Send Mail</a></li>
+                  <li>
+                    <a href="/intern_list/">Internship Training</a></li> 
+                  </li>
+                </ul>
+              </li>
+              <li><a href="/department/" class="animsition-link">Department</a></li>
+			  <li>
+                <a href="" class="animsition-link">Password</a>
+                <ul>
+                  <li><a href="/password/">Change Password</a></li>
+                  <li><a href="/pass_reset/">Reset Password</a></li>
+				</ul>
+                  <li>
+              <li><a href="/contact_us/" class="animsition-link">Contact</a></li>
+			  <li><a href="/logout/" class="animsition-link">Logout</a><li>
+            </ul> <!-- .templateux-menu -->
+          </nav> <!-- .site-nav -->
+          
+
+        </div> <!-- .row -->
+      </div> <!-- .container -->
+    </header> <!-- .templateux-navba -->
+    
+    <div class="templateux-cover" style="background-image: url({% static 'data/images/hero_1.jpg' %});">
+      <div class="container">
+        <div class="row align-items-lg-center">
+
+          <div class="col-lg-6 order-lg-1">
+            <h1 class="heading mb-3 text-white" data-aos="fade-up">Welcome To Koli Infotech <strong>Human Resource</strong></h1>
+            <p class="lead mb-5 text-white" data-aos="fade-up"  data-aos-delay="100"> where expertise meets opportunity. Our dedicated team of HR professionals works tirelessly to cultivate talent, foster growth, and drive organizational success. Join us on a journey of innovation and collaboration as we shape the future of work together.</p>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div> <!-- .templateux-cover -->
+
+    <div class="templateux-section pt-0 pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 templateux-overlap">
+            <div class="row">
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="media block-icon-1 d-block text-left">
+                  <div class="icon mb-3">
+                    <img src="{% static 'data/images/flaticon/svg/001-consultation.svg' %}" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="media-body">
+                    <h3><a href="/employee/"class="h5 mb-4">Employees</a></h3>
+                    <p>Our dedicated team of employees is the backbone of our organization. With diverse skills and backgrounds, they collaborate seamlessly to drive innovation and achieve our goals. From creative minds to analytical thinkers, our employees bring unique perspectives to every project. We foster a culture of continuous learning and growth, empowering our team to thrive professionally and personally.</p>
+                    <p><a href="#">Learn More</a></p>
+                  </div>
+                </div> <!-- .block-icon-1 -->
+              </div>
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="700">
+                <div class="media block-icon-1 d-block text-left">
+                  <div class="icon mb-3">
+                    <img src="{% static 'data/images/flaticon/svg/002-discussion.svg' %}" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="media-body">
+                    <h3><a href="/department/"class="h5 mb-4">Departments</a></h3>
+                    <p>Our departments are the functional units that ensure the smooth operation of our organization. Each department plays a vital role in fulfilling our mission and delivering value to our stakeholders. From finance to marketing, operations to human resources, our departments work cohesively to achieve strategic objectives. With clear goals and effective communication channels, we streamline processes and maximize efficiency across all departments.</p>
+                    <p><a href="#">Learn More</a></p>
+                  </div>
+                </div> <!-- .block-icon-1 -->
+              </div>
+              <div class="col-md-4" data-aos="fade-up" data-aos-delay="800">
+                <div class="media block-icon-1 d-block text-left">
+                  <div class="icon mb-3">
+                    <img src="{% static 'data/images/flaticon/svg/003-turnover.svg' %}" alt="Image" class="img-fluid">
+                  </div>
+                  <div class="media-body">
+                    <h3><a href="/management/"class="h5 mb-4">Management</a></h3>
+                    <p>Our management team comprises seasoned professionals with extensive experience in their respective fields. They provide strategic direction, leadership, and guidance to drive our organization forward. With a focus on innovation and excellence, our management fosters a culture of collaboration, accountability, and continuous improvement. They lead by example, inspiring our team to exceed expectations and achieve success. Meet our management team:</p>
+                    <p><a href="#">Learn More</a></p>
+                  </div>
+                </div> <!-- .block-icon-1 -->
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .templateux-section -->
+
+    <div class="templateux-section">
+
+      <div class="container"  data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-7">
+            <h2 class="mb-5">Our Agency</h2>
+            <div class="owl-carousel wide-slider">
+              <div class="item">
+                <img src="{% static 'data/images/slider-1.jpg' %}"  alt="Free template by TemplateUX.com" class="img-fluid">
+              </div>
+              <div class="item">
+                <img src="{% static 'data/images/slider-2.jpg' %}" alt="Free template by TemplateUX.com" class="img-fluid">
+              </div>
+              <div class="item">
+                <img src="{% static 'data/images/slider-3.jpg' %}" alt="Free template by TemplateUX.com" class="img-fluid">
+              </div>
+            </div> <!-- .owl-carousel -->
+          </div>
+          <div class="col-lg-5 pl-lg-5">
+            <h2 class="mb-5">Why Us?</h2>
+            <div class="accordion" id="accordionExample">
+
+
+              <div class="accordion-item">
+                <h2 class="mb-0 rounded mb-2">
+                  <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    HR Expertise and Experience</a>
+                </h2>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Our team comprises seasoned HR professionals with years of industry experience and expertise. We bring a deep understanding of HR best practices, regulations, and trends to help you navigate complex HR challenges effectively.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="mb-0 rounded mb-2">
+                  <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Comprehensive HR Solutions
+                  </a>
+                </h2>
+                
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>From talent acquisition to performance management and HR compliance, we offer comprehensive solutions to address all aspects of human resources management. Our holistic approach ensures that your HR needs are met efficiently and seamlessly.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="mb-0 rounded mb-2">
+                  <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Client-Centric Approach
+                  </a>
+                </h2>
+                
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>At Our Agency, we prioritize client satisfaction above all else. We take the time to understand your specific HR challenges, goals, and culture to deliver personalized solutions that align with your organization's objectives. Your success is our priority.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="accordion-item">
+                <h2 class="mb-0 rounded mb-2">
+                  <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Cutting-Edge HR Technology
+                  </a>
+                </h2>
+
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>We leverage the latest HR technology and tools to streamline processes, enhance efficiency, and improve decision-making. From advanced analytics to cloud-based HR systems, we harness innovation to drive positive outcomes for your organization.</p>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .templateux-section -->
+
+    <div class="templateux-section bg-light py-5" id="templateux-counter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <div class="templateux-counter text-center">
+              <span class="templateux-number" data-number="300">0</span>
+              <span class="templateux-label">Number of Employees</span>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="templateux-counter text-center">
+              <span class="templateux-number" data-number="10">0</span>
+              <span class="templateux-label">Number of Departments</span>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="templateux-counter text-center">
+              <span class="templateux-number" data-number="10">0</span>
+              <span class="templateux-label">Years Of Experience</span>
+            </div>
+          </div>    
+        </div>
+      </div>
+      
+    </div>
+  </div> <!-- .templateux-section -->
+
+  <div class="templateux-section pb-0">
+    <div class="container">
+      <div class="row text-center mb-4">
+        <div class="col-12">
+          <h2>The Leadership</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+          <div class="staff" class="staff-img" style="background-image: url({% static 'data/images/person_1.jpg' %});">
+            <a href="#" class="desc">
+              <h3>John Doe</h3>
+              <span>CEO</span>
+              <div class="parag">
+              <p>John Doe is the Chief Executive Officer and Co-Founder of our company. With a vision for innovation and growth, he leads our organization to new heights.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+          <div class="staff" class="staff-img" style="background-image: url({% static 'data/images/person_2.jpg' %});">
+            <a href="#" class="desc">
+              <h3>Jean Smith</h3>
+              <span>COO</span>
+              <div class="parag">
+              <p>Jane Smith serves as our Chief Operating Officer and Co-Founder. With her strategic leadership, she ensures operational excellence and organizational efficiency.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-6 col-md-6 col-lg-4">
+          <div class="staff" class="staff-img" style="background-image: url({% static 'data/images/person_3.jpg' %});">
+            <a href="#" class="desc">
+              <h3>Michael Johnson</h3>
+              <span>CFO</span>
+              <div class="parag">
+              <p>Michael Johnson is our Chief Financial Officer, overseeing financial planning and management. His expertise ensures our financial stability and growth.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="templateux-section">
+    <div class="container">
+      <div class="row text-center mb-5">
+        <div class="col-12">
+          <h2>Happy Employees</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8 testimonial-wrap">
+          <div class="quote">&ldquo;</div>
+          <div class="owl-carousel wide-slider-testimonial">
+            <div class="item">
+              <blockquote class="block-testomonial">
+                <p>&ldquo;The supportive work environment and opportunities for growth make this company a fantastic place to work.&rdquo;</p>
+                <p><cite>Drew Wilson, CEO and Founder of CoLab</cite></p>
+              </blockquote>
+            </div>
+
+            <div class="item">
+              <blockquote class="block-testomonial">
+                <p>&ldquo;I appreciate the emphasis on work-life balance and the collaborative culture here. It's a great team to be a part of.&rdquo;</p>
+                <p><cite>Craig Smith, CEO and Founder of Slite</cite></p>
+              </blockquote>
+            </div>
+
+            <div class="item">
+              <blockquote class="block-testomonial">
+                <p>&ldquo;The continuous learning opportunities and recognition for hard work motivate me to perform at my best every day.&rdquo;</p>
+                <p><cite>Bob Robe, CEO and Founder of Fixer</cite></p>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .container -->
+  </div> <!-- .templateux-section -->
+
+  <div class="templateux-section bg-light">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center mb-5">
+          <h2>Our Services</h2>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data/images/quality-test.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">QA & Testing</h3>
+              <p>A QA Tester is a professional who tests the functionality and usability of new or existing software before it goes live to ensure it is bug-free. They work closely with developers, providing them feedback on what needs improvement in order to produce top-</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data/images/app-develop.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">Mobile application development</h3>
+              <p>Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources.</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data\images\app-ai.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">Artificial Intelligence and Machine learning</h3>
+              <p>An “intelligent” computer uses AI to think like a human and perform tasks on its own. Machine learning is how a computer system develops its intelligence. One way to train a computer to mimic human reasoning is to use a neural network.</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data\images\webDevimg-1.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">Web Application Development</h3>
+              <p>Web application development is the creation of application programs that reside on remote servers and are delivered to the users device over the Internet.</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data\images\cloud.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">Cloud & Devops</h3>
+              <p>Cloud Developers are essentially software engineers with a specialization in cloud computing. That means on top of development experience, Cloud Developers must have a solid understanding of cloud systems — not only how they operate, but how to deploy them securely, efficiently, and with little-to-no downtime.</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="500">
+          <div class="media block-icon-1 d-block text-center">
+            <div class="icon mb-3">
+              <img src="{% static 'data\images\design1.webp' %}" alt="Image" class="img-fluid">
+            </div>
+            <div class="media-body">
+              <h3 class="h5 mb-4">Custom software development</h3>
+              <p>Custom software development is the process of designing, creating, deploying and maintaining software for a specific set of users, functions or organizations</p>
+            </div>
+          </div> <!-- .block-icon-1 -->
+        </div>
+
+      </div>
+      <div class="row">
+
+        <div class="col-md-12 text-center" data-aos="fade-up" data-aos-delay="100">
+          <p><a href="#" class="btn btn-black py-3 px-4">More Features</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- .templateux-section -->
+
+  <div class="container templateux-section">
+    <div class="row">
+      <div class="col-12 col-md-7 mx-auto text-center mb-5">
+        <h2>Our Blog</h2>
+        <p>Welcome to our Human Resources Blog!</p>
+        <p>Stay updated with the latest trends, best practices, and insights in HR management. From recruitment strategies to employee engagement tips, we've got you covered.</p>
+    </div>
+    </div>
+    <div class="d-flex flex-sm-row">
+      <a href="/blog/" class="block-thumbnail-1 one-third" style="background-image: url('{% static 'data/images/slider-2.jpg' %}'); " data-aos="fade">
+        <div class="block-thumbnail-content">
+          <h2>Website Maintenance and Support</h2>
+          <span class="post-meta">June 18, 2020  &bullet; by Admin</span>
+        </div>
+      </a>
+      <a href="/blog/" class="block-thumbnail-1 two-third" style="background-image: url('{% static 'data/images/slider-1.jpg' %}'); " data-aos="fade" data-aos-delay="100">
+        <div class="block-thumbnail-content">
+          <h2>Web App Service</h2>
+          <span class="post-meta">July 17, 2020 &bullet; by Admin</span>
+        </div>
+      </a>
+    </div>
+    <div class="d-flex flex-column flex-sm-row">
+      <a href="/blog/" class="block-thumbnail-1 two-third" style="background-image: url('{% static 'data/images/slider-3.jpg' %}'); " data-aos="fade" data-aos-delay="200">
+        <div class="block-thumbnail-content">
+          <h2>Needs Social Media</h2>
+          <span class="post-meta">March 18, 2020  &bullet; by Admin</span>
+        </div>
+      </a>
+      <a href="/blog/" class="block-thumbnail-1 one-third" style="background-image: url('{% static 'data/images/slider-4.jpg' %}'); " data-aos="fade" data-aos-delay="300">
+        <div class="block-thumbnail-content">
+          <h2>Why Content Marketing Should Be Part of Your Marketing Strategy</h2>
+          <span class="post-meta">March 22, 2020  &bullet; by Admin</span>
+        </div>
+      </a>
+    </div>
+  </div> <!-- .templateux-section -->
+
+
+</div> <!-- .templateux-section -->
+
+
+
+<footer class="templateux-footer bg-light">
+  <div class="container">
+
+    <div class="row mb-5">
+      <div class="col-md-4 pr-md-5">
+        <div class="block-footer-widget">
+          <h3>About</h3>
+          <p>Our dedicated team of HR professionals works tirelessly to cultivate talent, foster growth, and drive organizational success. Join us on a journey of innovation and collaboration as we shape the future of work together.</p>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="block-footer-widget">
+              <h3>Learn More</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Useful Tools</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="block-footer-widget">
+              <h3>Support</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Help Desk</a></li>
+                <li><a href="#">Knowledgebase</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="block-footer-widget">
+              <h3>About Us</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="block-footer-widget">
+              <h3>Connect With Us</h3>
+              <ul class="list-unstyled block-social">
+                <li><a href="#" class="p-1"><span class="icon-facebook-square"></span></a></li>
+                <li><a href="#" class="p-1"><span class="icon-twitter"></span></a></li>
+                <li><a href="#" class="p-1"><span class="icon-github"></span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div> <!-- .row -->
+
+      </div>
+    </div> <!-- .row -->
+
+    {% comment %} <div class="row pt-5 text-center">
+      <div class="col-md-12 text-center"><p>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="text-danger icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" class="text-primary">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p></div>
+    </div> <!-- .row --> {% endcomment %}
+
+  </div>
+</footer> <!-- .templateux-footer -->
+
+
+</div> <!-- .js-animsition -->
+
+
+<script src="{% static 'data/js/scripts-all.js' %}"></script>
+<script src="{% static 'data/js/main.js' %}"></script>
+
+</body>
+</html>

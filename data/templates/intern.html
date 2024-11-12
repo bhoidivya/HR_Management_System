@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Training</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'data/css/style.css' %}">
+    <style>
+      label {
+        font-weight: bold;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="js-animsition animsition" id="site-wrap" data-animsition-in-class="fade-in" data-animsition-out-class="fade-out">
+
+        <header class="templateux-navbar" role="banner">
+    
+            <div class="container"  data-aos="fade-down">
+              <div class="row">
+      
+                <div class="col-3 templateux-logo">
+                  <a href="" class="animsition-link">HumanResources</a>
+                </div>
+                <nav class="col-9 site-nav">
+                  <button class="d-block d-md-none hamburger hamburger--spin templateux-toggle templateux-toggle-light ml-auto templateux-toggle-menu" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button> <!-- .templateux-toggle -->
+      
+                  <ul class="sf-menu templateux-menu d-none d-md-block">
+                    <li class="active">
+                      <a href="/home/" class="animsition-link">Home</a>
+                    </li>
+                    <li><a href="/about_us/" class="animsition-link">About</a></li>
+                    <li>
+                      <a href="" class="animsition-link">Employee</a>
+                      <ul>
+                        <li><a href="/employee/">Employee List</a>
+                        <ul>
+                          <li><a href="/attendance_list/">Attendance</a>
+                          <li><a href="/leave_request_list/">Leave Request</a>
+                          </li>
+                      </li>
+                    </li>
+                        </ul>
+                      </li>
+                        <li><a href="/email_message/">Send Mail</a></li>
+                        <li>
+                          <a href="/intern/">Internship Training</a></li> 
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="/department/" class="animsition-link">Department</a></li>
+                    <li>
+                      <a href="" class="animsition-link">Password</a>
+                      <ul>
+                        <li><a href="/password/">Change Password</a></li>
+                        <li><a href="/pass_reset/">Reset Password</a></li>
+                      </ul>
+                        <li>
+                    <li><a href="/contact_us/" class="animsition-link">Contact</a></li>
+                    <li><a href="/logout/" class="animsition-link">Logout</a><li>
+                  </ul> <!-- .templateux-menu -->
+      
+                </nav> <!-- .site-nav -->
+                
+      
+              </div> <!-- .row -->
+            </div> <!-- .container -->
+          </header> <!-- .templateux-navba -->    
+
+
+          <div class="templateux-section" style="background-image: url('{% static 'data/images/slider-1.jpg' %}'); background-size: cover; background-position: center;">
+            <div class="container">
+              <div class="row">      
+
+    <div class="container mt-5 form-container" style="background-color: rgba(0, 0, 0, 0.5); padding: 20px;">
+        <h1 class="text-primary">Internship Training</h1>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="id_name">Name</label>
+                <input type="text" class="form-control" id="id_name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="id_email">Email</label>
+                <input type="email" class="form-control" id="id_email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="id_phone">Phone</label>
+                <input type="text" class="form-control" id="id_phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="id_skills">Skills</label>
+                <input type="text" class="form-control" id="id_skills" name="skills" required>
+            </div>
+            <div class="form-group">
+                <label for="id_resume">Resume</label>
+                <input type="file" class="form-control-file" id="id_resume" name="resume" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+</div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <footer class="templateux-footer bg-light">
+        <div class="container">
+    
+          <div class="row mb-5">
+            <div class="col-md-4 pr-md-5">
+              <div class="block-footer-widget">
+                <h3>About</h3>
+                <p>Our dedicated team of HR professionals works tirelessly to cultivate talent, foster growth, and drive organizational success. Join us on a journey of innovation and collaboration as we shape the future of work together.</p>
+              </div>
+            </div>
+    
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>Learn More</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">How it works?</a></li>
+                      <li><a href="#">Useful Tools</a></li>
+                      <li><a href="#">Pricing</a></li>
+                      <li><a href="#">Sitemap</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>Support</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Help Desk</a></li>
+                      <li><a href="#">Knowledgebase</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>About Us</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Careers</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+    
+                <div class="col-md-3">
+                  <div class="block-footer-widget">
+                    <h3>Connect With Us</h3>
+                    <ul class="list-unstyled block-social">
+                      <li><a href="#" class="p-1"><span class="icon-facebook-square"></span></a></li>
+                      <li><a href="#" class="p-1"><span class="icon-twitter"></span></a></li>
+                      <li><a href="#" class="p-1"><span class="icon-github"></span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div> <!-- .row -->
+    
+            </div>
+          </div> <!-- .row -->
+    
+    
+        </div>
+      </footer> <!-- .templateux-footer -->
+    
+    
+    </div> <!-- .js-animsition -->
+    
+    
+    <script src="{% static 'data/js/scripts-all.js' %}"></script>
+    <script src="{% static 'data/js/main.js' %}"></script>
+    
+
+</body>
+</html>

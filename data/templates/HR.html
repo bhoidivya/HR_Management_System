@@ -1,0 +1,30 @@
+{% comment %} {% extends 'master.html' %} {% endcomment %}
+{% load static %}
+{% comment %} {% block title %}
+ HR
+ {% endblock %} {% endcomment %}
+
+ 
+<html>
+    <head>
+        <title>HR Management System</title>
+        <link rel="stylesheet" href="{% static 'hr.css' %}">
+    </head>
+    <body>        
+   <a class='hr'></a>
+   <h1><a class='hr' href='/home/'>Welcome To HR Management System</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button></h1>
+    <h3 align-text="bottom"><a class='center' href='/about_us/'>About Us</a>  <img src="{% static 'icon3.png' %}" width='20px'>  <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+    </button></h3>
+    <h3><a class='center' href='/contact_us/'>Contact Us <i class="glyphicon glyphicon-envelope"></i> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> </a><button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+    </button></h3>
+    <h3><a class='center' href='/register/'>Register</a><button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+    </button></h3>
+    
+</body>
+</html>

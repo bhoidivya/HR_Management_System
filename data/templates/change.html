@@ -1,0 +1,54 @@
+{% comment %} {% extends 'master.html' %}
+{% load static %}
+{% block title %}
+change
+{% endblock %} {% endcomment %}
+
+{% block content %}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset with otp</title>
+    <link rel="stylesheet" href="{% static 'change.css' %}">
+</head>
+
+<body> 
+
+<h2>Reset Form</h2>
+
+ <form method="POST" >
+  {% csrf_token %}
+  <div class="container">
+    <label for="uname"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email ID" name="email" required>
+<br>
+<br>
+<br>
+    <label for="uname"><b>New Password</b></label>
+    <input type="password" placeholder=" new password" name="pas" required>
+<br>
+      <br>
+    <br>
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="c_pas" required>
+<br>
+      <br>
+
+    <button type="submit">Reset</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <div><h1 style="color:green"><em> {{ sended }}</em></h1></div>
+    {% comment %} <span class="psw"><a href="/pass_reset/">Reset password?</a></span> {% endcomment %}
+  </div>
+</form>
+{% endblock %} 
+{{ error_msg }}
+
+ </body>
+</html>  
+
